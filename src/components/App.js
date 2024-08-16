@@ -143,8 +143,8 @@ class App extends Component{
                     <div id='footer'>
                         <div id='footer-row1'>
                             <div>
-                                <button id='twitter' style={bgColor(this.state.bgcolor)}>
-                                        <a href='https://twitter.com/intent/tweet' target="_top"><span>X</span></a>
+                                <button style={bgColor(this.state.bgcolor)}>
+                                        <a id='tweet-quote' href='https://twitter.com/intent/tweet' target="_top"><span>X</span></a>
                                 </button>
                             </div>
                             <div>
