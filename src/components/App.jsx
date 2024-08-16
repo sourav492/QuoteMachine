@@ -84,7 +84,7 @@ class App extends Component{
     constructor(props){
         super(props)
         const color = getRandomColor()
-        const index = Math.floor(Math.random()*16) 
+        const index = Math.floor(Math.random()*data.length) 
         this.state = {
             text: data[index].text,
             author: data[index].author,
