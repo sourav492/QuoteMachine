@@ -113,7 +113,11 @@ class App extends Component{
             height: `100vh`,
         });
         const text_style = (color)=>({
-            color: color
+            color: color,
+            fontSize: `25px`
+        })
+        const author_style = (color)=>({
+            color: color,
         })
         const bgColor = (color)=>({
             backgroundColor: color,
@@ -126,14 +130,14 @@ class App extends Component{
                 <div id='quote-box'>
                     <div id='row1'>
                         <div id='text'>
-                            <FaQuoteLeft color={this.state.bgcolor} size={`3vw`}/>
+                            <FaQuoteLeft color={this.state.bgcolor} size={`2vw`}/>
                             <span style={text_style(this.state.bgcolor)}>  {this.state.text}
                             </span>
                         </div>
                     </div>
                     <div id='row2'>
                         <p id='author'>
-                        <span style={text_style(this.state.bgcolor)}>-{this.state.author}</span>
+                        <span style={author_style(this.state.bgcolor)}>-{this.state.author}</span>
                         </p>
                     </div>
                     <div id='footer'>
