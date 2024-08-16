@@ -1,6 +1,6 @@
 import React,{Component, useEffect, useState} from 'react';
 import './style.css'
-import { ImQuotesLeft } from "react-icons/im";
+import { FaQuoteLeft } from "react-icons/fa";
 
 //
 const data = [
@@ -126,7 +126,7 @@ class App extends Component{
                 <div id='quote-box'>
                     <div id='row1'>
                         <div id='text'>
-                            <ImQuotesLeft color={this.state.bgcolor} size={`3vw`}/>
+                            <FaQuoteLeft color={this.state.bgcolor} size={`3vw`}/>
                             <span style={text_style(this.state.bgcolor)}>  {this.state.text}
                             </span>
                         </div>
